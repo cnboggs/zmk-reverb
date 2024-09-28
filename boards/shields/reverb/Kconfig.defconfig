@@ -1,0 +1,21 @@
+# Copyright (c) 2024 Noah Boggs 
+# SPDX-License-Identifier: MIT
+
+if SHIELD_REVERB_RIGHT # TODO: make left the main 
+
+config ZMK_KEYBOARD_NAME
+    default "Reverb"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_REVERB_LEFT || SHIELD_REVERB_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+# TODO: add nice!nano and view zmk config needed here
+
+endif

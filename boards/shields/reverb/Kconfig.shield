@@ -1,0 +1,8 @@
+# Copyright (c) 2024 Noah Boggs 
+# SPDX-License-Identifier: MIT
+
+config SHIELD_REVERB_LEFT
+   def_bool $(shields_list_contains,reverb_left)
+
+config SHIELD_REVERB_RIGHT
+   def_bool $(shields_list_contains,reverb_right)
