@@ -72,7 +72,7 @@ RC(4,0) RC(4,1) RC(4,2) RC(4,3)                                                 
                     <NRF_PSEL(SPIM_MOSI, 0, 8)>;
             low-power-enable;
         };
-    };1
+    };
 };
 
 nice_view_spi: &spi0 {
