@@ -19,9 +19,9 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: reverb_left
+    shield: reverb_left nice_view
   - board: nice_nano_v2
-    shield: reverb_right
+    shield: reverb_right nice_view
 #    snippet: zmk-usb-logging
 #   cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #   artifact-name: reverb_right_with_logging

@@ -5,3 +5,7 @@ type: shield
 requires: [pro_micro]
 features:
   - keys
+  - display
+siblings:
+  - reverb_left
+  - reverb_right
