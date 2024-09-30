@@ -41,7 +41,7 @@
     pinctrl-0 = <&spi2_default>;
     pinctrl-names = "default";
     trackball: trackball@0 {
-        compatible = "pixart,pmw3360"; // use the pmw3360 driver here?
+        compatible = "pixart,pmw3389"; // use the pmw3360 driver here?
         label = "Pixart PMW33XX";
         reg = <0>;
         interrupt-parent = <&gpio0>;
