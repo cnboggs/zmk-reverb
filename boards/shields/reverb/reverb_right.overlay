@@ -23,19 +23,27 @@
         ;
 };
 
+// Configure pin assignments for spi2
+&pinctrl {
+    spi2_default: spi2_default {
+        group1 {
+            psels = <NRF_PSEL(SPIM_SCK, 0, 22)>,   // SCK pin (P0.22)
+                    <NRF_PSEL(SPIM_MOSI, 0, 20)>,  // MOSI pin (P0.20)
+                    <NRF_PSEL(SPIM_MISO, 0, 17)>;  // MISO pin (P0.17)
+        };
+    };
+};
+
 // trackball spi
 // https://www.tindie.com/products/citizenjoe/pmw3389-motion-sensor/#specs
 &spi2 {
     status = "okay";
-    miso-pin = <17>; // P0.17
-    mosi-pin = <20>; // P0.20
-    sck-pin  = <22>; // P0.22
-    pinctrl-0 = <>;
+    pinctrl-0 = <&spi2_default>;
     pinctrl-names = "default";
     trackball: trackball@0 {
         compatible = "pixart,pmw3360"; // use the pmw3360 driver here?
         label = "Pixart PMW33XX";
-        reg = <0>; // 
+        reg = <0>;
         interrupt-parent = <&gpio0>;
         interrupts = <21 GPIO_ACTIVE_LOW>; // defined as active low in the spec
    };
