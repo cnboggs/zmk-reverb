@@ -24,16 +24,20 @@
 };
 
 // trackball spi
-// &spi2 {
-//    status = "okay";
-//    miso-pin = <17>; // P0.17
-//    mosi-pin = <20>; // P0.20
-//    sck-pin  = <22>; // P0.22
-//    trackball: trackball@0 {
-//        compatible = "pixart,pmw3360";
-//        label = "Pixart PMW3360";
-//        reg = <0>; // saw a comment about this being required for SPI, but is it?
-//        // should I define a spi-max-frequency here?
-//    };
-// };
+// https://www.tindie.com/products/citizenjoe/pmw3389-motion-sensor/#specs
+&spi2 {
+    status = "okay";
+    miso-pin = <17>; // P0.17
+    mosi-pin = <20>; // P0.20
+    sck-pin  = <22>; // P0.22
+    pinctrl-0 = <>;
+    pinctrl-names = "default";
+    trackball: trackball@0 {
+        compatible = "pixart,pmw3360"; // use the pmw3360 driver here?
+        label = "Pixart PMW33XX";
+        reg = <0>; // 
+        interrupt-parent = <&gpio0>;
+        interrupts = <21 GPIO_ACTIVE_LOW>; // defined as active low in the spec
+   };
+};
 
