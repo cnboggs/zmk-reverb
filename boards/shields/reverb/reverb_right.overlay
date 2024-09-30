@@ -44,8 +44,10 @@
         compatible = "pixart,pmw3389"; // use the pmw3360 driver here?
         label = "Pixart PMW33XX";
         reg = <0>;
-        interrupt-parent = <&gpio0>;
-        interrupts = <21 GPIO_ACTIVE_LOW>; // defined as active low in the spec
+        spi-max-frequency = <2000000>; // 2MHz
+        resolution = <200>;
+        //interrupt-parent = <&gpio0>;
+        //interrupts = <21 GPIO_ACTIVE_LOW>; // defined as active low in the spec
    };
 };
 
