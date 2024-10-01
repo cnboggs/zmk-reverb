@@ -45,6 +45,7 @@
         reg = <10>;
         spi-max-frequency = <2000000>; // 2MHz
         resolution = <200>;
+        cs-gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;
         //interrupt-parent = <&gpio0>;
         //interrupts = <21 GPIO_ACTIVE_LOW>; // defined as active low in the spec
    };
