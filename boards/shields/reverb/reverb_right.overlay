@@ -42,7 +42,6 @@
     pinctrl-names = "default";
     motion_sensor: pmw3389@a {
         compatible = "pixart,pmw3389";
-        label = "Pixart PMW3389";
         reg = <10>;
         spi-max-frequency = <2000000>; // 2MHz
         resolution = <200>;
