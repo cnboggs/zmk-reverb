@@ -40,10 +40,10 @@
     status = "okay";
     pinctrl-0 = <&spi2_default>;
     pinctrl-names = "default";
-    trackball: trackball@0 {
-        compatible = "pixart,pmw3360"; // use the pmw3360 driver here?
-        label = "Pixart PMW33XX";
-        reg = <0>;
+    motion_sensor: pmw3389@a {
+        compatible = "pixart,pmw3389";
+        label = "Pixart PMW3389";
+        reg = <10>;
         spi-max-frequency = <2000000>; // 2MHz
         resolution = <200>;
         //interrupt-parent = <&gpio0>;
