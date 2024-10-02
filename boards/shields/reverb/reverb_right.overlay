@@ -37,6 +37,7 @@
 // trackball spi
 // https://www.tindie.com/products/citizenjoe/pmw3389-motion-sensor/#specs
 &spi2 {
+    compatible = "nordic,nrf-spim";
     status = "okay";
     pinctrl-0 = <&spi2_default>;
     pinctrl-names = "default";
