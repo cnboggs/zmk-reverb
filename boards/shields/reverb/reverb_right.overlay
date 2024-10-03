@@ -54,7 +54,7 @@
     motion_sensor: pmw3389@0 {
         compatible = "pixart,pmw3389";
         reg = <0>;
-        irq-gpios =  <&gpio0 6 GPIO_ACTIVE_LOW | GPIO_PULL_UP>;
+        irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-max-frequency = <2000000>; // 2MHz
         resolution = <200>;
    };
