@@ -32,9 +32,5 @@ nice_view_spi: &spi0 {
     pinctrl-1 = <&spi0_sleep>;
     pinctrl-names = "default", "sleep";
     // cs-gpio is defined in _right.overlay
-
-    &nice_view {
-        status = "okay";
-    };
 };
 
