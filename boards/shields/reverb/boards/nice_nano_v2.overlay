@@ -24,7 +24,7 @@
     };
 };
 
-nice_view_spi: &spi0 {
+&spi0 {
     compatible = "nordic,nrf-spim";
     status = "okay";
     pinctrl-0 = <&spi0_default>;
