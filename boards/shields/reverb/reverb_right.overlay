@@ -36,9 +36,5 @@
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-max-frequency = <2000000>; // 2MHz
    };
-
-    nice_view: ls0xx@0 {
-        status = "disabled";
-    };
 };
 
