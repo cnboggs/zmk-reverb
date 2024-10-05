@@ -19,7 +19,7 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: reverb_left nice_view
+    shield: reverb_left
   - board: nice_nano_v2
     shield: reverb_right
     snippet: zmk-usb-logging
