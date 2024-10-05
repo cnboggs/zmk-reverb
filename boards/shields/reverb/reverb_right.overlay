@@ -38,6 +38,3 @@
    };
 };
 
-&nice_view {
-    status = "disabled";
-};
