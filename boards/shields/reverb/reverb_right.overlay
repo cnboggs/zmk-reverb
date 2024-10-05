@@ -31,7 +31,7 @@
                <&gpio0 31 GPIO_ACTIVE_LOW>;  // Chip select 1 for pmw3389
     motion_sensor: pmw3389@1 {
         compatible = "pixart,pmw3389";
-        status = "okay";
+        status = "disabled";
         reg = <1>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         spi-max-frequency = <2000000>; // 2MHz
