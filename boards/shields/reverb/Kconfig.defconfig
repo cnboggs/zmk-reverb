@@ -16,6 +16,7 @@ if SHIELD_REVERB_LEFT || SHIELD_REVERB_RIGHT
 config ZMK_SPLIT
     default y
 
-# TODO: add nice!nano and view zmk config needed here
+config SPI
+    default y
 
 endif

@@ -23,8 +23,6 @@
         ;
 };
 
-
-
 // https://www.tindie.com/products/citizenjoe/pmw3389-motion-sensor/#specs
 &spi0 {
     cs-gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;  // Chip select 0 for pmw3389
