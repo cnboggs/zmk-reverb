@@ -11,9 +11,12 @@ manifest:
       remote: zmkfirmware
       revision: feat/pointers-move-scroll
       import: app/west.yml
-    - name: pmw3389_zephyr_driver
-      remote: cnboggs 
-      revision: debug
-      path: modules/pmw3389
+    - name: zmk-pmw3389-driver
+      remote: cnboggs
+      revision: pmw3389
+  #   - name: pmw3389_zephyr_driver
+  #     remote: cnboggs
+  #     revision: debug
+  #     path: modules/pmw3389
   self:
     path: config
