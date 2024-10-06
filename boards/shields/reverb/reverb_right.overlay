@@ -35,3 +35,10 @@
    };
 };
 
+/ {
+  trackball_listener {
+    compatible = "zmk,input-listener";
+    device = <&motion_sensor>;
+  };
+};
+
